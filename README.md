@@ -1,4 +1,6 @@
 # goda-vue
+A vue based microfrontend. Pending : Need to move vue dependencies to the static content server. will do it later.
+
 
 ## Project setup
 ```
