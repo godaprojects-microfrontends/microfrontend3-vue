@@ -3,8 +3,11 @@ import App from './App.vue'
 
 Vue.config.productionTip = false
 
-window.renderMicrofrontendVue = (containerId) => { 
+window.renderMicrofrontendVue = (containerId, data) => { 
+  // alert(containerId)
   new Vue({
-    render: h => h(App),
+    render: h => h(App, {
+      props: {data, example: 'Example of data initialized in main.js', jsonData: {item1:'Json data in main.js'}}
+    }),
   }).$mount('#'+containerId)
 }

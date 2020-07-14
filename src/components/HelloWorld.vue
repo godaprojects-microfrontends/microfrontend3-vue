@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    Goda's Vue Component
+    Goda's Vue Component <br/> Data obtained: <br/> Message from App.vue: {{msg}} | Message from main.js: {{example}} | Data from micro frontend container: {{data}} | JSON data from main.js: {{jsonData}}
   </div>
 </template>
 
@@ -8,7 +8,10 @@
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
+    msg: String,
+    example: String,
+    data: String,
+    jsonData: String
   }
 }
 </script>

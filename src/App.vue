@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Welcome to Your Vue.js App" :example="example" :data="data" :jsonData="jsonData"/>
   </div>
 </template>
 
@@ -8,6 +8,7 @@
 import HelloWorld from './components/HelloWorld.vue'
 
 export default {
+  props: ['example', 'data','jsonData'],
   name: 'App',
   components: {
     HelloWorld
